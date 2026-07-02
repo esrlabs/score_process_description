@@ -79,7 +79,6 @@ Diagram Attributes
 
    Each diagram shall have a description.
 
-.. _detailed_design_linkage:
 
 Diagram Checks
 ''''''''''''''
