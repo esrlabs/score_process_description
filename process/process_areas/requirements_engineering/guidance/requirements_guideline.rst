@@ -75,7 +75,7 @@ For all requirements following mandatory attributes are defined:
 
 * Title and description: For formulating requirements, the following template shall be used :need:`[[title]]<gd_temp__req_formulation>`
 * ID: The naming convention for the ID is defined for every project in a central place (e.g. in the general contributor's guidelines)
-* Furthermore the requirements need to be versioned to document content changes.
+* Furthermore the requirements need to be versioned to document content changes, see :ref:`significant_requirement_changes`
 * For the remaining attributes only predefined values can be used. A more detailed description can be found here: :ref:`attributes of the requirements`
 * Note that "rationale" is only mandatory for Stakeholder Requirements.
 * Process requirements do not need the security and safety attributes because these can be derived from the standards they comply with. Type attributes are also unnecessary, as these requirements are always non‑functional.
@@ -125,7 +125,7 @@ This section describes in detail which steps need to be performed to create a re
      - Merge valid child requirement to main branch
      - :need:`[[title]] <rl__committer>`
    * - :ref:`7. <formal_requirement_review>`
-     - Perform formal review (inspection) of requirements
+     - Perform formal review (inspection) of requirements (or start with the next iteration of requirements changes)
      - :need:`[[title]] <rl__committer>`
 
 .. _create_parent_requirement:

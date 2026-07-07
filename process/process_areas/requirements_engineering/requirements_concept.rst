@@ -181,7 +181,7 @@ Following attributes need to be filled manually for each requirement:
    * - Description
      - In this attribute the content for the requirement will be specified. Please be aware that a note in a requirement is not part of the requirement itself. This means that notes should only be used to give additional explanation or context to the requirement.
    * - Version
-     - Version updated whenever an attribute changed which may affect the linked child requirements.
+     - Version of the requirement adapted with each significat change, see :ref:`significant_requirement_changes`.
    * - Rationale / Linkage
      - In either of those attributes the reasoning for the requirement is included.
        For *Stakeholder Requirements* a rationale which provides some more background infos shall be provided.
@@ -231,25 +231,33 @@ Individual Requirements
 
 For the requirements the version management is basically provided by version management tooling (e.g. git history). However it needs to be identified if the content of a requirement changed. So this concept aims only at identifying a significant change in the attributes of a requirement.
 
-Versioning
-^^^^^^^^^^
+.. _significant_requirement_changes:
 
-Only significant changes to the attributes of a requirement shall result in a version change:
+Versioning on Significant Changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Only significant changes to the attributes of a requirement shall result in a version change,
+generally this is everything which may affect the content of the child requirements:
 
 .. list-table:: Significant Attributes
    :header-rows: 1
-   :widths: 30,70
+   :widths: 30,35, 35
 
    * - Attribute link
      - What is significant
+     - What is not significant
    * - :need:`gd_req__req_attr_description`
-     - Functional changes shall lead to a version change, no formal corrections or modifications of the notes
+     - Functional changes and also re-writes which might lead to a better understanding of the content
+     - typo corrections, formal adaptions (e.g. layout), modifications of the requirement's notes
    * - :need:`gd_req__req_attr_safety`
      - every change
+     - n/a
    * - :need:`gd_req__req_attr_security`
      - every change
+     - n/a
    * - :need:`gd_req__req_attr_type`
      - every change
+     - n/a
 
 Linking child requirements including versions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
