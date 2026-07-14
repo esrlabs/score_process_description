@@ -320,7 +320,7 @@ Process Requirements Checks
 .. gd_req:: Requirement check: suspicious
    :id: gd_req__req_suspicious
    :status: valid
-   :version: 2
+   :version: 3
    :tags: prio_2_automation, check
    :satisfies: wf__req_stkh_req[version==1], wf__req_feat_req[version==1], wf__req_comp_req[version==1]
    :complies: std_req__iso26262__support_6425[version==1], std_req__iso26262__support_6434[version==1], std_req__aspice_40__iic-13-51[version==1]
