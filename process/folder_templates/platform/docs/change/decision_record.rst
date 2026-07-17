@@ -32,7 +32,7 @@ In each DR file, include the following sections:
       :id: dec_rec__<Platform|Feature|Component>__<Title>, dec_rec__<arch|proc|strat|infra|int>__<slug>
       :status: <proposed|accepted|deprecated|rejected|superseded>
       :tracking: <link to GitHub issue URL, required once a DR is confirmed>
-      :version: 1
+      :version: 2
       :affects: <link>
 
       <Description>
@@ -73,9 +73,26 @@ In each DR file, include the following sections:
       *  **<Disadvantage 2>:** <Explanation>
       ]
 
+      Note:
+      Throughout the discussion of a CR, various ideas will be proposed which are not accepted.
+      Those rejected ideas should be recorded along with the reasoning as to why they were rejected.
+      This both helps record the thought process behind the final version of the CR as well as preventing people from bringing up the same rejected idea again in subsequent discussions.
+      In a way this section can be thought of as a breakout section of the Rationale section that is focused specifically on why certain ideas were not ultimately pursued.
+
       Justification for the Decision
       ------------------------------
       <your text>
+
+
+      Impact Analysis (Optional)
+      --------------------------
+      The impact analysis template can be used to detail out the impact on the platform
+      and if applicable for other aspects, especially for safety/security.
+      Either reference here to the filled-out template or copy the content from
+      the template in this chapter and fill it out here.
+      The impact analysis template is available in [1].
+
+The impact analysis template is available here [1]_.
 
 .. attention::
     The above directive must be updated according to your decision record.
@@ -90,3 +107,5 @@ In each DR file, include the following sections:
     - Add ``Context`` to describe the issue or motivation behind this decision or change (mandatory)
     - Add ``decision`` to detail the proposed change or decision (mandatory)
     - Add ``consequences`` to explain the impact of this change, including what becomes easier or more difficult (recommended)
+
+.. [1] The impact analysis template is available here: :ref:`Impact Analysis Template <chm_impact_analysis_templates>`
